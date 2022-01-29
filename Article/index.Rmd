@@ -1,0 +1,57 @@
+--- 
+title: "my_project"
+subtitle: "Early draft, please do not share"
+thanks: "For helpful comments we thank ..."
+author: 
+- Rafael Felipe Bressan[^eesp]
+date: "Last update: `r Sys.Date()`"
+abstract: "This paper explores a ... \\newline\\newline \\textbf{keywords}: tax evasion, customs duties, non-tariff barriers, trading companies"
+site: bookdown::bookdown_site
+documentclass: article
+papersize: a4
+fontsize: 12pt
+geometry: "left=2.5cm,right=2.5cm,top=2cm,bottom=2cm"
+bibliography: [references.bib]
+biblio-style: authoryear
+link-citations: yes
+urlcolor: blue
+citecolor: blue
+github-repo: rfbressan/my_project
+description: "My project description"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center", 
+  fig.retina = 3,
+  fig.width = 7,
+  out.width = "80%",
+  fig.asp = 9/16
+)
+#' Remember, the working directory for code chunks is my_project/Article by 
+#' default. Because we are using the targest package, which must be in the
+#' project root, we set the working directory via root.dir in opts_knit$set()
+knitr::opts_knit$set(
+  root.dir = rprojroot::find_root(rprojroot::is_rstudio_project))
+```
+
+```{r libraries, message=FALSE}
+library(kableExtra)
+library(data.table)
+```
+
+```{r load-ad-summary}
+targets::tar_load("hello")
+```
+
+
+# Introduction
+
+@slemrod2001general blablabla. Consumers respond to incentives, [@arbex2015optimal].
+
+```{r hello-world}
+kbl(transpose(hello), booktabs = TRUE)
+```

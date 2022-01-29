@@ -9,9 +9,12 @@ The goal of my_project is to ...
 
 1. Fork this project to your Github account
 2. Create a new R project (in RStudio) from Version Control
+
 2.1 Choose a directory and paste the https url of your Github repo
+
 3. Restore the development environment with `renv::restore()`
 4. In Tools -> Project Options -> Build tools, select Website and define your `my_project/Article` as the site directory
+
 4.1 The Build pane will be available, from where you can build your article (Ctrl+Shif+B) **when your pipeline is up to date**
 
 After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B).

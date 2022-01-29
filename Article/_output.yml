@@ -1,0 +1,7 @@
+bookdown::pdf_book:
+  toc: false
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: biblatex
+  keep_tex: yes

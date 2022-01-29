@@ -1,0 +1,45 @@
+--- 
+title: "my_project proposal"
+author: "Rafael Felipe Bressan"
+date: 'Last update: `r Sys.Date()`'
+bibliography: "Article/tax-policy.bib"
+biblio-style: authoryear
+link-citations: yes
+urlcolor: blue
+citecolor: blue
+---
+
+Describe here the proposal of this project. 
+
+## What are the research questions?
+
+## Describe the data collected and respective sources
+
+## Pre-processing the data
+
+Describe all the steps you took to make your data ready for estimation
+
+## Exploratory data analysis
+
+Summary statistics tables and figures produced with the data
+
+## Econometrics
+
+Describe the econometric specifications and main results
+
+### Figures
+
+### Tables
+
+## Robustness
+
+Provide the robustness assessments made. Different specifications, placebo outcome regresions, etc. 
+
+Here, @arbex2015optimal, provide a citation example.
+
+## Article
+
+A link to the PDF article can be found [here](Article/article/my_project.pdf)
+
+
+## References
