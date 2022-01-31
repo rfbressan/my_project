@@ -1,3 +1,9 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
-hello_fun|function|f02b0ea08e80d3d9||||||||||||||
 hello|stem|3f2a8d183f2d854c|02e2b64169572715|0b96b001d3155e67|-922937317||t19014.9869124804s|86ba68e3cf76027d|376|fst_dt|vector|||0.019||
+hello_fun|function|f02b0ea08e80d3d9||||||||||||||
+hello_vec|stem|53a661c7c08e5dd2|f39493a375b9c3e0|2182935f4e1b6f81|-1256898412||t19023.8161177898s|93a4d4dc4116d568|64|rds|vector|||0.011||
+hello_dt|stem|98c480eaefd9d1e2|d32053ceebd874f0|7acb684730ca567b|-1563193281||t19023.816120012s|b6099e1bec5fd49f|419|fst_dt|vector|||0.015||
+hello_an_fun|function|255899d2440ff37c||||||||||||||
+hello_dt_fun|function|6af5278674ca476d||||||||||||||
+hello_tbl|function|69f47894aa652c83||||||||||||||
+hello_tex|stem|ef46db3751d8e999|3604594e71324961|5dd406ad2f3ee538|-518259029|Article/Tables/hello.tex|t19023.8165434443s|f4066a65ff755f48|0|file|vector|||0.352||

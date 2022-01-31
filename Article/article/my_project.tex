@@ -113,9 +113,9 @@
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[style=authoryear,]{biblatex}
-\addbibresource{tax-policy.bib}
+\addbibresource{references.bib}
 
-\title{my\_project}
+\title{my\_project\thanks{For helpful comments we thank \ldots{}}}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
@@ -123,27 +123,24 @@
 }
 \makeatother
 \subtitle{Early draft, please do not share}
-\author{Rafael Felipe Bressan}
-\date{Last update: 2022-01-23}
+\author{Rafael Felipe Bressan\footnote{Sao Paulo School of Economics, FGV/EESP}}
+\date{Last update: 2022-01-31}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-This paper explores a \ldots{} \newline\newline \textbf{keywords}: tax evasion, customs duties, trading companies, non-tariff barriers
+This paper explores a \ldots{} \newline\newline \textbf{keywords}: tax evasion, customs duties, non-tariff barriers, trading companies
 \end{abstract}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-\textcite{slemrod2001general} blablabla. Consumers respond to incentives, \autocite{arbex2015optimal}.
+The original character string processed is: ``hello world''.
 
-\begin{tabular}[t]{llllllllll}
-\toprule
-V1 & V2 & V3 & V4 & V5 & V6 & V7 & V8 & V9 & V10\\
-\midrule
-H & E & L & L & O & W & O & R & L & D\\
-\bottomrule
-\end{tabular}
+Citations follow the \href{https://bookdown.org/yihui/rmarkdown/markdown-syntax.html}{Rmarkdown} syntax as in
+\textcite{arbex2015optimal} or, \autocite{arbex2015optimal}.
+
+\input{Tables/hello}
 
 \printbibliography
 

@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.18)  23 JAN 2022 09:16
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.28)  31 JAN 2022 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **my_project.tex
 (./my_project.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-12> (/home/rafael/.TinyTeX/texmf-dist/tex/latex/b
+L3 programming layer <2022-01-21> (/home/rafael/.TinyTeX/texmf-dist/tex/latex/b
 ase/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/home/rafael/.TinyTeX/texmf-dist/tex/latex/base/size12.clo
@@ -126,7 +126,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (/home/rafael/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/h
 ome/rafael/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-12 L3 programming layer (loader) 
+Package: expl3 2022-01-21 L3 programming layer (loader) 
 (/home/rafael/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
 (|extractbb --version)
@@ -1142,7 +1142,7 @@ Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-01-12 L3 programming layer (loader) 
+(biblatex)             2022-01-21 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/home/rafael/.TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
@@ -1156,28 +1156,26 @@ Package biblatex Info: ... file 'my_project.bbl' found.
 Package biblatex Info: Reference section=0 on input line 129.
 Package biblatex Info: Reference segment=0 on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 131.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 131.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 31.
 (/home/rafael/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 20.7419pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 14.4013pt on input line 131.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 131.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 131.
+(Font)              scaled to size 12.0011pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 20.73778pt on input line 131.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 14.39845pt on input line 131.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 131.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 131.
+(Font)              scaled to size 11.99872pt on input line 131.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 131
 .
 (/home/rafael/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1192,27 +1190,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/rafael/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 131.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 131.
+
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40076pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 140.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 140.
-[1
+(./Tables/hello.tex) [1
 
 ] (./my_project.aux)
 Package rerunfilecheck Info: File `my_project.out' has not changed.
@@ -1222,12 +1223,12 @@ Package logreq Info: Writing requests to 'my_project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27854 strings out of 478189
- 522439 string characters out of 5854508
- 1410869 words of memory out of 5000000
- 48068 multiletter control sequences out of 15000+600000
- 475778 words of font info for 78 fonts, out of 8000000 for 9000
+ 27866 strings out of 478190
+ 522624 string characters out of 5854531
+ 1408960 words of memory out of 5000000
+ 48071 multiletter control sequences out of 15000+600000
+ 475793 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,7n,121p,1007b,5298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,12n,121p,1007b,5298s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on my_project.pdf (1 page).

@@ -20,6 +20,8 @@ github-repo: rfbressan/my_project
 description: "My project description"
 ---
 
+[^eesp]: Sao Paulo School of Economics, FGV/EESP
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   echo = FALSE,
@@ -41,17 +43,19 @@ knitr::opts_knit$set(
 ```{r libraries, message=FALSE}
 library(kableExtra)
 library(data.table)
+library(fst)
 ```
 
 ```{r load-ad-summary}
-targets::tar_load("hello")
+targets::tar_load("hello_vec")
 ```
 
 
 # Introduction
 
-@slemrod2001general blablabla. Consumers respond to incentives, [@arbex2015optimal].
+The original character string processed is: "`r hello_vec`". 
 
-```{r hello-world}
-kbl(transpose(hello), booktabs = TRUE)
-```
+Citations follow the [Rmarkdown](https://bookdown.org/yihui/rmarkdown/markdown-syntax.html) syntax as in
+@arbex2015optimal or, [@arbex2015optimal].
+
+\input{Tables/hello}
