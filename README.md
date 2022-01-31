@@ -4,8 +4,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of my_project is to ...
+The goal of my_project is to provide a minimal infrastructure for writing a research paper using [R]() packages [`targets`](https://books.ropensci.org/targets/index.html) as the main build automation data analysis pipeline and [`bookdown`](https://bookdown.org/yihui/bookdown/) for authoring the manuscript.
 
+## How to use it
 
 1. Fork this project to your Github account
 2. Create a new R project (in RStudio) from Version Control
@@ -17,11 +18,14 @@ The goal of my_project is to ...
 
 4.1 The Build pane will be available, from where you can build your article (Ctrl+Shif+B) **when your pipeline is up to date**
 
-After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B).
+After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B). Your can check your workflow using the `targets` functions `tar_visnetwork()` or `tar_manifest()`. For more advanced uses you should check the [`targets`](https://books.ropensci.org/targets/index.html) manual.
+
+The data analysis pipeline is used to produce artifacts (e.g. intermediary data, data frames, regression results, etc.), [LaTEX](https://www.ctan.org/) tables (i.e., .tex files) and figures, which can be consumed in the article source RMarkdown. For example, the pipeline would create a LaTEX table file in the directory `Article/Tables` named `hello.tex` and, the `index.Rmd` in the Article folder, which will compile into the paper PDF, would call `\input{Tables/hello}` to insert the table into the final document.
+
 
 ## Structure
 
-The folder and files structure is chosen to benefit from the data analysis pipeline tool, the [`targets`](https://books.ropensci.org/targets/) package and, with the writting of a research article using [`bookdown`](https://bookdown.org/yihui/bookdown/) in mind.
+The folder and files structure is chosen to benefit from the data analysis pipeline tool, the [`targets`](https://books.ropensci.org/targets/) package and, the writting of a research article using [`bookdown`](https://bookdown.org/yihui/bookdown/). 
 
 |--- _targets/          : where `tar_make()` writes target storage and metadata 
 
@@ -78,3 +82,4 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 |--- renv/                    : dependency management for improved reproducibility
 
 |--- renv.lock
+
