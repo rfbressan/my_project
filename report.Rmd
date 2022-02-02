@@ -1,0 +1,30 @@
+---
+title: "Report"
+author: "Rafael F. Bressan"
+date: "02/02/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Package `targets` can handle literate programming (i.e., lightweight dependency-aware R Markdown reports) inside the individual target of a pipeline. An R Markdown report as part of a target should be
+lightweight: mostly prose, minimal code, fast execution, and no output other than the rendered final document, like this example.
+
+We begin by loading the `targets` package in order to access its functions like `tar_read()` and `tar_load()`. Then, we are able to call on previously computed targets.
+
+```{r}
+library(targets)
+```
+
+```{r hello-dt}
+tar_load(hello_dt)
+hello_dt
+```
+
+## 

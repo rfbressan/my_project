@@ -22,6 +22,7 @@ tar_option_set(
 list(
   tar_target(hello_vec, hello_dt_fun()),
   tar_target(hello_dt, hello_an_fun(hello_vec), format = "fst_dt"),
-  tar_target(hello_tex, hello_tbl(hello_dt), format = "file")
-  # Call your custom functions as needed.
+  tar_target(hello_tex, hello_tbl(hello_dt), format = "file"),
+  # You can also render small RMarkdown with tarchetypes::tar_render()
+  tar_render(report, "report.Rmd")
 )
