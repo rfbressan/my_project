@@ -83,3 +83,8 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 
 |--- renv.lock
 
+## Separation of data analysis and article
+
+I have opted to keep separate workflows, data analysis using `targets` and, article authoring using `bookdown` and the Build pane, mainly because `tarchetypes::tar_render()` does not support a `bookdown::pdf_book:` with many files (e.g., one file for each paper section). Another good reason not to put the article compilation into the pipeline is the time it takes to complete the task and, we usually do not want to recompile the whole article every single time we create or adjust an intermediary result. Keeping the data analyis apart from the article authoring lets us interactively make our analysis and debug results without worrying about the article's format and other details. Only when we are happy with our analysis, we can put everything together in the manuscript and build it (CTRL+SHIFT+B) to check on the result.
+
+Of course, we still have the ability to introduce the compilation of an RMarkdown file into the pipeline, see the section on [Literate Programming](https://books.ropensci.org/targets/files.html#literate-programming) from the `targets` documentation. In this case, we rather compile a lightweight report which depends on other targets in the pipeline. Those targets are usually loaded through functions like `tar_load()` and used throughout the report. Unless your research article falls into the *lightweight* category, I suggest you keep the article's build process and the data analysis apart.
