@@ -39,7 +39,7 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 
 |--- .Rprofile          : automatically created by `renv`
 
-|--- .Renviron          : environment variables, e.g. API keys
+|--- .Renviron          : optional file. environment variables, e.g. API keys
 
 |--- Article/           : where the files of your article will be
 
@@ -88,3 +88,51 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 I have opted to keep separate workflows, data analysis using `targets` and, article authoring using `bookdown` and the Build pane, mainly because `tarchetypes::tar_render()` does not support a `bookdown::pdf_book:` with many files (e.g., one file for each paper section). Another good reason not to put the article compilation into the pipeline is the time it takes to complete the task and, we usually do not want to recompile the whole article every single time we create or adjust an intermediary result. Keeping the data analyis apart from the article authoring lets us interactively make our analysis and debug results without worrying about the article's format and other details. Only when we are happy with our analysis, we can put everything together in the manuscript and build it (CTRL+SHIFT+B) to check on the result.
 
 Of course, we still have the ability to introduce the compilation of an RMarkdown file into the pipeline, see the section on [Literate Programming](https://books.ropensci.org/targets/files.html#literate-programming) from the `targets` documentation. In this case, we rather compile a lightweight report which depends on other targets in the pipeline. Those targets are usually loaded through functions like `tar_load()` and used throughout the report. Unless your research article falls into the *lightweight* category, I suggest you keep the article's build process and the data analysis apart.
+
+## Guidelines for an R research project
+
+The following are general guidelines for using R on research projects. This section is heavily inspired on [`R_guide`](https://github.com/skhiggins/R_guide) from professor Sean Higgins, all credit goes to him.
+
+### Data manipulation and regression
+
+- Use [`data.table`](https://rdatatable.gitlab.io/data.table/index.html) the efficiency advantages will payoff. The learning curve may be steeper than [`tidyverse`](https://www.tidyverse.org/) but the computation speed and lower memory footprint are well worth it.
+
+- Never use `setwd()` or absolute file paths. Instead, use relative file paths with the [`here`]() package. Did I say never? **Never**.
+
+- Lear how to use [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects) and keep all project-related files under one working directory.
+
+- Use `assertthat::assert_that()` frequently to add programmatic sanity checks in the code.
+
+- Use pipes. Either the R-native |> or, the `magrittr`'s `%>%`.
+
+- Use [`fixest`](https://lrberge.github.io/fixest/) for all your regressions. It's fast, handles fixed-effects neatly, large datasets and, multiple regression specifications at once.
+
+- Use [`modelsummary`](https://vincentarelbundock.github.io/modelsummary/index.html) to create the tables from `fixest` regressions. If needed, use either [`kableExtra`](https://haozhu233.github.io/kableExtra/) or [`gt`](https://gt.rstudio.com/index.html) to further format them.
+
+### Graphing
+
+- Use [`ggplot2`](https://ggplot2.tidyverse.org/). This is a no-brainer.
+
+- Use customized themes and colorblind-friendly palettes. The package [`ggthemes`]() and many others are your friends.
+
+- For maps, use the `sf` package. This package makes plotting maps easy (with ggplot2::geom_sf()), and also makes other tasks like joining geocoordinate polygons and points a breeze.
+
+- Save your ggplots with `ggplot2::ggsave()`. For reproducible graphs, always specify the width and height arguments in `ggplot2::ggsave()`.
+
+### Reading and saving files
+
+- Read csv files with `data.table::fread()`.
+
+- Smaller datasets can be saved as csv files. `data.table::fwrite()` does the job.
+
+- Larger datasets should be saved using [`fst`](http://www.fstpackage.org/) package's `fst::write_fst()`. If serialization is not possible (e.g., due to the presence of list-columns), use `saveRDS()`.
+
+### Reproducibility
+
+Reproducibility matters. You want other researchers (including future you!) to be able to replicate your results. Never save the workspace when quitting RStudio and, do not reload it from an `.Rdata` file. Go to Tools > Global Options > General and:
+
+![](https://rstats.wtf/img/rstudio-workspace.png)
+
+- Use [`renv`](https://rstudio.github.io/renv/articles/renv.html) to manage the packages used in an RStudio project, avoiding conflicts related to package versioning.
+
+- USE a version control system, I suggest Git/Github. I cannot emphasize this enough, if you want to control all changes made during development of your piece of software and many versions of it, learn how to use Git! Suggested places to start, Grant Mcdermott's [slides](https://raw.githack.com/uo-ec607/lectures/master/02-git/02-Git.html#1), [Happy Git and GitHub for the useR](https://happygitwithr.com/) and, [about Git](https://docs.github.com/en/get-started/using-git/about-git)
