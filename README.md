@@ -135,4 +135,6 @@ Reproducibility matters. You want other researchers (including future you!) to b
 
 - Use [`renv`](https://rstudio.github.io/renv/articles/renv.html) to manage the packages used in an RStudio project, avoiding conflicts related to package versioning.
 
-- USE a version control system, I suggest Git/Github. I cannot emphasize this enough, if you want to control all changes made during development of your piece of software and many versions of it, learn how to use Git! Suggested places to start, Grant Mcdermott's [slides](https://raw.githack.com/uo-ec607/lectures/master/02-git/02-Git.html#1), [Happy Git and GitHub for the useR](https://happygitwithr.com/) and, [about Git](https://docs.github.com/en/get-started/using-git/about-git)
+- USE a version control system, I suggest Git/Github. I cannot emphasize this enough, if you want to control all changes made during development of your piece of software and many versions of it, learn how to use Git! Suggested places to start, Grant Mcdermott's [slides](https://raw.githack.com/uo-ec607/lectures/master/02-git/02-Git.html#1), [Happy Git and GitHub for the useR](https://happygitwithr.com/) and, [about Git](https://docs.github.com/en/get-started/using-git/about-git).
+
+- Adopt a commit messages convention. Be it the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) or [angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit), adhere to one specification and then use an automatic changelog generator like [`git-changelog`](https://pawamoy.github.io/git-changelog/).
