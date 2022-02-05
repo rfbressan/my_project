@@ -95,9 +95,9 @@ The following are general guidelines for using R on research projects. This sect
 
 ### Data manipulation and regression
 
-- Use [`data.table`](https://rdatatable.gitlab.io/data.table/index.html) the efficiency advantages will payoff. The learning curve may be steeper than [`tidyverse`](https://www.tidyverse.org/) but the computation speed and lower memory footprint are well worth it.
+- Use [`data.table`](https://rdatatable.gitlab.io/data.table/index.html). The efficiency advantages will payoff. The learning curve may be steeper than [`tidyverse`](https://www.tidyverse.org/) but, the computation speed and lower memory footprint are well worth it.
 
-- Never use `setwd()` or absolute file paths. Instead, use relative file paths with the [`here`]() package. Did I say never? **Never**.
+- Never use `setwd()` or absolute file paths. Instead, use relative file paths with the [`here`](https://here.r-lib.org/) package. Did I say never? **Never**.
 
 - Lear how to use [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects) and keep all project-related files under one working directory.
 

@@ -37,7 +37,7 @@ knitr::opts_chunk$set(
 #' default. Because we are using the targest package, which must be in the
 #' project root, we set the working directory via root.dir in opts_knit$set()
 knitr::opts_knit$set(
-  root.dir = rprojroot::find_root(rprojroot::is_rstudio_project))
+  root.dir = here::here())
 ```
 
 ```{r libraries, message=FALSE}
