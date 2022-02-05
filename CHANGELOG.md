@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [v0.1.0-alpha](https://github.com/rfbressan/my_project/releases/tag/v0.1.0-alpha) - 2022-02-05
 
-<small>[Compare with latest](https://github.com/rfbressan/my_project/compare/25e2bd399dfe6bab765ca00bdd7f96f024bce7eb...HEAD)</small>
+<small>[Compare with v0.1.0-alpha](https://github.com/rfbressan/my_project/compare/v0.1.0-alpha...v0.1.0-alpha)</small>
 
 ### Bug Fixes
 - Specify format="latex" in kbl function ([f3a988f](https://github.com/rfbressan/my_project/commit/f3a988ffea0e0433226851301b9bac4f0d8a1002) by Rafael Bressan).
+
+
+## [v0.1.0-alpha](https://github.com/rfbressan/my_project/releases/tag/v0.1.0-alpha) - 2022-02-03
+
+<small>[Compare with first commit](https://github.com/rfbressan/my_project/compare/25e2bd399dfe6bab765ca00bdd7f96f024bce7eb...v0.1.0-alpha)</small>
+
+### Bug Fixes
 - Prepares for first alpha release ([da5feb2](https://github.com/rfbressan/my_project/commit/da5feb226fad5c9f91ecc27db576b5b1ea013a6a) by Rafael Bressan).
 - Updates packages in renv ([6fdb68a](https://github.com/rfbressan/my_project/commit/6fdb68ae1da212533db40ae824f17ef138967ae6) by Rafael Bressan).
 
