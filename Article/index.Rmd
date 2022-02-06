@@ -59,3 +59,12 @@ Citations follow the [Rmarkdown](https://bookdown.org/yihui/rmarkdown/markdown-s
 @arbex2015optimal or, [@arbex2015optimal].
 
 \input{Tables/hello}
+
+Figure \@ref(fig:graph) shows the dependency structure of the current pipeline.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Figs/graph.png}
+    \caption{Targets dependency graph}
+    \label{fig:graph} 
+\end{figure}

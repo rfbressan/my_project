@@ -18,7 +18,9 @@ The goal of my_project is to provide a minimal infrastructure for writing a rese
 
 4.1 The Build pane will be available, from where you can build your article (Ctrl+Shif+B) **when your pipeline is up to date**
 
-After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B). Your can check your workflow using the `targets` functions `tar_visnetwork()` or `tar_manifest()`. For more advanced uses you should check the [`targets`](https://books.ropensci.org/targets/index.html) manual.
+After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B). Your can check your workflow using the `targets` functions `tar_visnetwork()` or `tar_manifest()`. For more advanced uses you should check the [`targets`](https://books.ropensci.org/targets/index.html) manual. The targets dependency graph for this project is presented in the figure bellow.
+
+![](Article/Figs/graph.png)
 
 The data analysis pipeline is used to produce artifacts (e.g. intermediary data, data frames, regression results, etc.), [LaTEX](https://www.ctan.org/) tables (i.e., .tex files) and figures, which can be consumed in the article source RMarkdown. For example, the pipeline would create a LaTEX table file in the directory `Article/Tables` named `hello.tex` and, the `index.Rmd` in the Article folder, which will compile into the paper PDF, would call `\input{Tables/hello}` to insert the table into the final document.
 
