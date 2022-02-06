@@ -56,13 +56,13 @@ targets::tar_load("hello_vec")
 The original character string processed is: "`r hello_vec`". 
 
 Citations follow the [Rmarkdown](https://bookdown.org/yihui/rmarkdown/markdown-syntax.html) syntax as in
-@arbex2015optimal or, [@arbex2015optimal].
+@arbex2015optimal or, [@arbex2015optimal]. In Table \@ref(tab:hello) we present the number of characters in the original string.
 
 \input{Tables/hello}
 
 Figure \@ref(fig:graph) shows the dependency structure of the current pipeline.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Figs/graph.png}
     \caption{Targets dependency graph}
