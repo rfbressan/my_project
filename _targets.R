@@ -13,10 +13,11 @@ library(tarchetypes)
 source("R/functions_data.R")
 source("R/functions_analysis.R")
 source("R/functions_tables.R")
+source("R/utils.R")
 
 # Set target-specific options such as packages.
 tar_option_set(
-  packages = c("data.table", "kableExtra"))
+  packages = c("data.table", "fst", "kableExtra", "ggplot2", "ggthemes"))
 
 # End this file with a list of target objects.
 list(

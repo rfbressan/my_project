@@ -9,11 +9,13 @@ The goal of my_project is to provide a minimal infrastructure for writing a rese
 ## How to use it
 
 1. Fork this project to your Github account
+
 2. Create a new R project (in RStudio) from Version Control
 
 2.1 Choose a directory and paste the https url of your Github repo
 
 3. Restore the development environment with `renv::restore()`
+
 4. In Tools -> Project Options -> Build tools, select Website and define your `my_project/Article` as the site directory
 
 4.1 The Build pane will be available, from where you can build your article (Ctrl+Shif+B) **when your pipeline is up to date**
@@ -95,13 +97,9 @@ Of course, we still have the ability to introduce the compilation of an RMarkdow
 
 The following are general guidelines for using R on research projects. This section is heavily inspired on [`R_guide`](https://github.com/skhiggins/R_guide) from professor Sean Higgins, all credit goes to him.
 
-### Data manipulation and regression
+### Data manipulation and regressions
 
 - Use [`data.table`](https://rdatatable.gitlab.io/data.table/index.html). The efficiency advantages will payoff. The learning curve may be steeper than [`tidyverse`](https://www.tidyverse.org/) but, the computation speed and lower memory footprint are well worth it.
-
-- Never use `setwd()` or absolute file paths. Instead, use relative file paths with the [`here`](https://here.r-lib.org/) package. Did I say never? **Never**.
-
-- Lear how to use [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects) and keep all project-related files under one working directory.
 
 - Use `assertthat::assert_that()` frequently to add programmatic sanity checks in the code.
 
@@ -115,7 +113,7 @@ The following are general guidelines for using R on research projects. This sect
 
 - Use [`ggplot2`](https://ggplot2.tidyverse.org/). This is a no-brainer.
 
-- Use customized themes and colorblind-friendly palettes. The package [`ggthemes`]() and many others are your friends.
+- Use customized themes and colorblind-friendly palettes. The package [`ggthemes`]() and many others are your friends. In the `R` folder you will find a customized theme named `theme_academic` in the `utils.R` file.
 
 - For maps, use the `sf` package. This package makes plotting maps easy (with ggplot2::geom_sf()), and also makes other tasks like joining geocoordinate polygons and points a breeze.
 
@@ -135,8 +133,14 @@ Reproducibility matters. You want other researchers (including future you!) to b
 
 ![](https://rstats.wtf/img/rstudio-workspace.png)
 
+- Never use `setwd()` or absolute file paths. Instead, use relative file paths with the [`here`](https://here.r-lib.org/) package. Did I say never? **Never**.
+
+- Lear how to use [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects) and keep all project-related files under one working directory.
+
 - Use [`renv`](https://rstudio.github.io/renv/articles/renv.html) to manage the packages used in an RStudio project, avoiding conflicts related to package versioning.
 
 - USE a version control system, I suggest Git/Github. I cannot emphasize this enough, if you want to control all changes made during development of your piece of software and many versions of it, learn how to use Git! Suggested places to start, Grant Mcdermott's [slides](https://raw.githack.com/uo-ec607/lectures/master/02-git/02-Git.html#1), [Happy Git and GitHub for the useR](https://happygitwithr.com/) and, [about Git](https://docs.github.com/en/get-started/using-git/about-git).
 
 - Adopt a commit messages convention. Be it the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) or [angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit), adhere to one specification and then use an automatic changelog generator like [`git-changelog`](https://pawamoy.github.io/git-changelog/).
+
+- Commit frequently. Ideally, there would be one commit for each specific change made in the code.
