@@ -20,7 +20,7 @@ The goal of my_project is to provide a minimal infrastructure for writing a rese
 
 4.1 The Build pane will be available, from where you can build your article (Ctrl+Shif+B) **when your pipeline is up to date**
 
-After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B). Your can check your workflow using the `targets` functions `tar_visnetwork()` or `tar_manifest()`. For more advanced uses you should check the [`targets`](https://books.ropensci.org/targets/index.html) manual. The targets dependency graph for this project is presented in the figure bellow.
+After this initial setup your workflow would consist of creating new functions to perform a task, declare a target for such a task, run the pipeline with `targets::tar_make()`, update your manuscript in the Article folder and, compile the article (Build Book or Ctrl+Shif+B). Your can check your workflow using the `targets` functions `tar_visnetwork()` or `tar_manifest()`. For more advanced usage you should check the [`targets`](https://books.ropensci.org/targets/index.html) manual. The targets dependency graph for this project is presented in the figure bellow.
 
 ![](Article/Figs/graph.png)
 
@@ -95,7 +95,7 @@ Of course, we still have the ability to introduce the compilation of an RMarkdow
 
 ## Guidelines for an R research project
 
-The following are general guidelines for using R on research projects. This section is heavily inspired on [`R_guide`](https://github.com/skhiggins/R_guide) from professor Sean Higgins, all credit goes to him.
+The following are general guidelines for using R on research projects. This section is heavily inspired on [`R_guide`](https://github.com/skhiggins/R_guide) from professor [Sean Higgins](https://seankhiggins.com/), all credit goes to him.
 
 ### Data manipulation and regressions
 
