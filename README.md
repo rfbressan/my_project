@@ -31,19 +31,7 @@ The data analysis pipeline is used to produce artifacts (e.g. intermediary data,
 
 The folder and files structure is chosen to benefit from the data analysis pipeline tool, the [`targets`](https://books.ropensci.org/targets/) package and, the writting of a research article using [`bookdown`](https://bookdown.org/yihui/bookdown/). 
 
-|--- _targets/          : where `tar_make()` writes target storage and metadata 
-
-|--- _targets.R         : [target script file](https://docs.ropensci.org/targets/reference/tar_script.html)
-
-|--- _targets.yaml      : default arguments to functions like `tar_make()`
-
-|--- .gitignore
-
-|--- .Rbuildignore
-
-|--- .Rprofile          : automatically created by `renv`
-
-|--- .Renviron          : optional file. environment variables, e.g. API keys
+![](Article/Figs/my_project_folders.png)
 
 |--- Article/           : where the files of your article will be
 
@@ -67,9 +55,11 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 
 |----- input_data.csv
 
-|--- index.Rmd          : optional file. The basis of your website
+|--- Presentation/
 
-|--- LICENSE.md
+|------ Figs/           : figures created **for presentation slides** in the pipeline should be saved here
+
+|------ Tables/         : LaTEX tables generated **for presentation slides** in the pipeline should be saved here 
 
 |--- R/                 : folder of scripts with user-defined R code (functions)
 
@@ -80,12 +70,18 @@ The folder and files structure is chosen to benefit from the data analysis pipel
 |----- functions_tables.R     : generating LaTEX tables from results
 
 |----- functions_plots.R      : functions creating figures
-
-|--- README.md
   
 |--- renv/                    : dependency management for improved reproducibility
 
+|--- _targets/          : where `tar_make()` writes target storage and metadata 
+
+|--- LICENSE.md
+
+|--- README.md
+
 |--- renv.lock
+
+|--- _targets.R         : [target script file](https://docs.ropensci.org/targets/reference/tar_script.html)
 
 ## Separation of data analysis and article
 
