@@ -103,13 +103,13 @@ The following are general guidelines for using R on research projects. This sect
 
 - Use [`fixest`](https://lrberge.github.io/fixest/) for all your regressions. It's fast, handles fixed-effects neatly, large datasets and, multiple regression specifications at once.
 
-- Use [`modelsummary`](https://vincentarelbundock.github.io/modelsummary/index.html) to create the tables from `fixest` regressions. If needed, use either [`kableExtra`](https://haozhu233.github.io/kableExtra/) or [`gt`](https://gt.rstudio.com/index.html) to further format them.
+- Use [`modelsummary`](https://vincentarelbundock.github.io/modelsummary/index.html) to create the tables from `fixest` regressions. If needed, use either [`kableExtra`](https://haozhu233.github.io/kableExtra/) or [`gt`](https://gt.rstudio.com/index.html) to further format them. For LaTEX output only, you can also use the [`fixest::etable`](https://lrberge.github.io/fixest/articles/exporting_tables.html) function.
 
 ### Graphing
 
 - Use [`ggplot2`](https://ggplot2.tidyverse.org/). This is a no-brainer.
 
-- Use customized themes and colorblind-friendly palettes. The package [`ggthemes`]() and many others are your friends. In the `R` folder you will find a customized theme named `theme_academic` in the `utils.R` file.
+- Use customized themes and colorblind-friendly palettes. The package [`ggthemes`](https://jrnold.github.io/ggthemes/), [`ggpubr`](https://rpkgs.datanovia.com/ggpubr/index.html) and many others are your friends. In the `R` folder you will find a customized theme named `theme_academic` in the `utils.R` file.
 
 - For maps, use the `sf` package. This package makes plotting maps easy (with ggplot2::geom_sf()), and also makes other tasks like joining geocoordinate polygons and points a breeze.
 
